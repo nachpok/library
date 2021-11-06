@@ -1,0 +1,40 @@
+    {
+    "tableName":"users",
+    "tableQrury":"create table users(userId int auto_increment not null, primary key (userId),firstName nvarchar(20) NOT NULL,lastName nvarchar(20) NOT NULL,tudatZehut nvarchar(9) NOT NULL,address nvarchar(30) NOT NULL,email nvarchar(30) NOT NULL,status enum ('user','admin') NOT NULL,bookLimit int  NOT NULL,userPassword nvarchar(64) NOT NULL,phoneNumber nvarchar(10));",
+    "tableData":[
+        {
+            "firstName":"Nachliel",
+            "lastName":"Pokroy",
+            "tudatZehut":"245346978",
+            "address":"Eretz Hemda 43, Bit-El",
+            "email":"nachpok@gmail.com",
+            "status":"admin",
+            "bookLimit":"3",
+            "userPassword":"1234567890123456789012345678901234567890123456789012345678901234",
+            "phoneNumber":""
+        },
+        {
+            "firstName":"Sam",
+            "lastName":"Yavin",
+            "tudatZehut":"987654321",
+            "address":"Mivtza Hiram 43, Ariel",
+            "email":"shimon@gmail.com",
+            "status":"user",
+            "bookLimit":"2",
+            "userPassword":"1234567890123456789012345678901234567890123456789012345678901234",
+            "phoneNumber":""
+        },
+        {
+            "firstName":"Joe",
+            "lastName":"Bilby",
+            "tudatZehut":"123456789",
+            "address":"Ramat Hagolan 34, Ariel",
+            "email":"kfirh@gmail.com",
+            "status":"user",
+            "bookLimit":"4",
+            "userPassword":"1234567890123456789012345678901234567890123456789012345678901234",
+            "phoneNumber":""
+        }
+    ],
+    "tableDP":["firstName","lastName","tudatZehut","address","email","status","bookLimit","userPassword","phoneNumber"]
+    }
