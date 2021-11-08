@@ -5,12 +5,12 @@
         {
             "firstName":"Nachliel",
             "lastName":"Pokroy",
-            "tudatZehut":"245346978",
+            "tudatZehut":"123456789",
             "address":"Eretz Hemda 43, Bit-El",
             "email":"nachpok@gmail.com",
             "status":"admin",
             "bookLimit":"3",
-            "userPassword":"1234567890123456789012345678901234567890123456789012345678901234",
+            "userPassword":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
             "phoneNumber":""
         },
         {
@@ -21,7 +21,7 @@
             "email":"shimon@gmail.com",
             "status":"user",
             "bookLimit":"2",
-            "userPassword":"1234567890123456789012345678901234567890123456789012345678901234",
+            "userPassword":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
             "phoneNumber":""
         },
         {
@@ -32,7 +32,7 @@
             "email":"kfirh@gmail.com",
             "status":"user",
             "bookLimit":"4",
-            "userPassword":"1234567890123456789012345678901234567890123456789012345678901234",
+            "userPassword":"8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
             "phoneNumber":""
         }
     ],

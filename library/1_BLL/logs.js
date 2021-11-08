@@ -97,13 +97,6 @@ async function updateLog(logId,returnDate,comment){
 }
 
 
-async function test(d1,d2,d3){
-    let temp = await updateLog(d1,d2,d3);
-    console.log("test func(): ",temp);
-}
-test(13,'2013-10-11',null);
-
-
 module.exports={
     getLogById,
     addLog,

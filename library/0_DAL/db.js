@@ -66,7 +66,7 @@ async function  checkTable(tableName){
 }
 
 //check table, if not in db init
-async function initTables(tableName,tableQuery,tableData,tableDP){
+async function initTable(tableName,tableQuery,tableData,tableDP){
     let res = await checkTable(tableName);
     if(!res){
         runQuery(tableQuery)
@@ -77,12 +77,13 @@ async function initTables(tableName,tableQuery,tableData,tableDP){
 }
 //create tables if do not exisst
 //users
-initTables(userData.tableName,userData.tableQrury,JSON.stringify(getUsersValue()).replace(/]/g,")").replace(/\[/g,"(").slice(1,-1),userData.tableDP.join(","));//
+function initAllTables(){
+    initTable(userData.tableName,userData.tableQrury,JSON.stringify(getUsersValue()).replace(/]/g,")").replace(/\[/g,"(").slice(1,-1),userData.tableDP.join(","));//
 //books
-initTables(bookData.tableName,bookData.tableQrury,JSON.stringify(getBooksValue()).replace(/]/g,")").replace(/\[/g,"(").slice(1,-1),bookData.tableDP.join(","));//
+    initTable(bookData.tableName,bookData.tableQrury,JSON.stringify(getBooksValue()).replace(/]/g,")").replace(/\[/g,"(").slice(1,-1),bookData.tableDP.join(","));//
 //logs
-initTables(logsData.tableName,logsData.tableQrury,JSON.stringify(getLogsValue()).replace(/]/g,")").replace(/\[/g,"(").slice(1,-1),logsData.tableDP.join(","));
-//console.log(logsData.tableName,logsData.tableQrury,JSON.stringify(getLogsValue()).replace(/]/g,")").replace(/\[/g,"(").slice(1,-1),logsData.tableDP.join(","));
+    initTable(logsData.tableName,logsData.tableQrury,JSON.stringify(getLogsValue()).replace(/]/g,")").replace(/\[/g,"(").slice(1,-1),logsData.tableDP.join(","));}
+
 function getUsersValue(){
     let users=userData.tableData;
     return users.map((user)=>[
@@ -128,7 +129,8 @@ module.exports={
     disconnect,
     runQuery,
     runQueryWithParam,
-    extractDbResult
+    extractDbResult,
+    initAllTables
 }
 
 

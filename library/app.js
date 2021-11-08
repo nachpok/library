@@ -2,10 +2,10 @@ const db=require('./0_DAL/db');
 const bll_books=require('./1_BLL/books');
 const bll_users=require('./1_BLL/users');
 const bll_logs=require('./1_BLL/logs');
-
-//let func = bll.addBook(9789655173666,"Harry Potter and the chamber of secrets","J.K. Rowlling","2010","avilable",77,"2015-01-01");
-//console.log(func);
+const auth=require('./1_BLL/auth');
 
 //db.connect();
 //db.disconnect();
-
+db.initAllTables();// create all tables and insert data
+auth.test();
+//console.log(Date.now());

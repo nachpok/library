@@ -1,5 +1,6 @@
 const dal=require('./../0_DAL/db'); 
 
+
 async function getUserById(userId){
     try {
         let res = await dal.runQuery(`select * from users where userId=${userId};`);
